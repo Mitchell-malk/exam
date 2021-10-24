@@ -1,0 +1,28 @@
+.form-group{
+    margin-left: 706px;
+}
+.alert{
+    width: 520px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.row{
+    margin-top: 10px;
+}
+
+.badge{
+    float: right;
+}
+.table{
+    width: 550px;
+    margin: 10px;
+}
+.pagination{
+    margin-left: 10px;
+}
+.label{
+    margin: 10px;
+}
+.progress{
+    margin: 10px;
+}

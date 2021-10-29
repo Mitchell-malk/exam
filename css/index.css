@@ -2,9 +2,7 @@
     margin-left: 706px;
 }
 .alert{
-    width: 520px;
-    margin-left: 25px;
-    margin-top: 10px;
+    margin: 10px;
 }
 .row{
     margin-top: 10px;
@@ -14,7 +12,6 @@
     float: right;
 }
 .table{
-    width: 550px;
     margin: 10px;
 }
 .pagination{

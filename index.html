@@ -80,16 +80,18 @@
                 <button type="button" class="btn btn-info">操作4</button>
                 <button type="button" class="btn btn-warning">操作5</button>
                 <button type="button" class="btn btn-danger">操作6</button>
+
                 <div class="row">
                     <div class="col-md-6">
                         <div class="panel panel-primary">
-
-                            <div class="panel-heading">
-                                <h3 class="panel-title">最新提醒</h3>
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">最新提醒</h3>
+                                </div>
+                            <div class="panel-body">
+                                <div class="alert alert-success" role="alert">提示 您的订单(2014001)已经审批通过！</div>
+                                <div class="alert alert-danger" role="alert">提示 您的订单(2014002)被打包！</div>
+                                <div class="alert alert-warning" role="alert">提示 您的订单(2014003)客户付款延迟！</div>
                             </div>
-                            <div class="alert alert-success" role="alert">提示 您的订单(2014001)已经审批通过！</div>
-                            <div class="alert alert-danger" role="alert">提示 您的订单(2014002)被打包！</div>
-                            <div class="alert alert-warning" role="alert">提示 您的订单(2014003)客户付款延迟！</div>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -97,23 +99,70 @@
                             <div class="panel-heading">
                                 <h3 class="panel-title">我的任务</h3>
                             </div>
-                            <ul class="nav nav-pills nav-stacked">
-                                <div class="alert alert-success" role="alert">
-                                    <a href="#">订单审批 <span class="badge">42</span></a>
-                                </div>
-                                <div class="alert alert-danger" role="alert">
-                                    <a href="#">收款确认 <span class="badge">20</span></a>
-                                </div>
-                                <div class="alert alert-warning" role="alert">
-                                    <a href="#">付款确认 <span class="badge">10</span></a>
-                                </div>
-                            </ul>
+                            <div class="panel-body">
+                                <ul class="nav nav-pills nav-stacked">
+                                    <div class="alert alert-success" role="alert">
+                                        <a href="#">订单审批 <span class="badge">42</span></a>
+                                    </div>
+                                    <div class="alert alert-danger" role="alert">
+                                        <a href="#">收款确认 <span class="badge">20</span></a>
+                                    </div>
+                                    <div class="alert alert-warning" role="alert">
+                                        <a href="#">付款确认 <span class="badge">10</span></a>
+                                    </div>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="panel panel-primary">
+                        <div class="panel  panel-primary">
+                            <div class="panel-heading">最新订单</div>
+                            <div class="panel-body">
+                                <table class="table table-striped">
+                                    <tr>
+                                        <td>#</td>
+                                        <td>产品</td>
+                                        <td>数量</td>
+                                        <td>总金额</td>
+                                        <td>业务员</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Apple Macbook air</td>
+                                        <td>10</td>
+                                        <td>80000</td>
+                                        <td>王小贱</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Apple iPad air</td>
+                                        <td>20</td>
+                                        <td>65000</td>
+                                        <td>尹开花</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Apple Macbook Pro</td>
+                                        <td>5</td>
+                                        <td>50000</td>
+                                        <td>刘老根</td>
+                                    </tr>
+                                </table>
+
+                                <nav aria-label="...">
+                                    <ul class="pagination">
+                                        <li class="active">
+                                            <a href="#">查看详细<span class="sr-only">(current)</span>
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <!--<div class="panel panel-primary">
 
                             <div class="panel-heading">
                                 <h3 class="panel-title">最新订单</h3>
@@ -150,28 +199,34 @@
                             </table>
                             <nav aria-label="...">
                                 <ul class="pagination">
-                                    <li class="active"><a href="#">查看详细<span class="sr-only">(current)</span></a></li>
-                                    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&raquo;</span></a></li>
+                                    <li class="active">
+                                        <a href="#">查看详细<span class="sr-only">(current)</span>
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+
                                 </ul>
                             </nav>
-                        </div>
+                        </div>-->
                     </div>
                     <div class="col-md-6">
                         <div class="panel panel-primary">
                             <div class="panel-heading">
                                 <h3 class="panel-title">工程进度</h3>
                             </div>
-                            <h3> <span class="label label-primary">水井挖掘工程 </span> </h3>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                    <span class="sr-only">60% Complete (warning)</span>
+                            <div class="panel-body">
+                                <h3> <span class="label label-primary">水井挖掘工程 </span> </h3>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                        <span class="sr-only">60% Complete (warning)</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <h3> <span class="label label-danger">基建工程 </span> </h3>
-                            <div class="progress">
+                                <h3> <span class="label label-danger">基建工程 </span> </h3>
+                                <div class="progress">
                                 <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
                                     <span class="sr-only">80% Complete (danger)</span>
                                 </div>
+                            </div>
                             </div>
                         </div>
                     </div>
